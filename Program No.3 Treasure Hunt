@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int treasure, x, y;
+    int ben, remaining, blackbeard, pirate;
+
+    scanf("%d %d %d", &treasure, &x, &y);
+
+    ben = treasure * x / 100;
+    remaining = treasure - ben;
+
+    blackbeard = remaining * y / 100;
+    remaining -= blackbeard;
+
+    pirate = remaining / 3;
+
+    printf("%d\n%d\n%d\n", ben, blackbeard, pirate);
+
+    return 0;
+}
